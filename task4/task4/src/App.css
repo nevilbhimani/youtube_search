@@ -36,3 +36,95 @@
     transform: rotate(360deg);
   }
 }
+.channel_name {
+  color: rgb(100, 96, 96);
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 12px;
+}
+.channel_name:hover {
+  color: rgb(56, 54, 54);
+  cursor: pointer;
+}
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.vid_title.css-h93ljk-MuiTypography-root {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.searchBox {
+  color: black;
+  margin-left: 100px;
+  float: left;
+  max-height: 50px;
+}
+.search_icon {
+  height: 56px;
+  width: 50px;
+}
+.iconButton {
+  float: left;
+
+  /* padding-top: 40px !important; */
+  width: 56px !important;
+}
+.top_navbar {
+  height: 56px;
+  padding: 0 16px;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  height: 20px;
+  width: 90px;
+  padding: 18px 14px 18px 16px;
+  color: black !important;
+  font-weight: 800;
+  float: left;
+}
+.yticon {
+  height: 56px;
+  width: 90px;
+  float: left;
+}
+/* .icon_button {
+  padding-top: 40px !important;
+  width: 40px !important;
+  min-height: 56px !important;
+} */
+.card {
+  max-height: 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  min-height: 250px !important;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.micbttn {
+  min-height: 56px !important;
+  border-radius: 100px !important;
+  max-width: 40px;
+  background-color: transparent !important;
+}
+.bellbttn {
+  min-height: 56px !important;
+  border-radius: 100px !important;
+  max-width: 40px;
+  float: right;
+}
+.appbttn {
+  min-height: 56px !important;
+  border-radius: 100px !important;
+  max-width: 40px;
+  float: right;
+}
+.createbtn {
+  min-height: 56px !important;
+  border-radius: 100px !important;
+  max-width: 40px;
+  float: right;
+}
+.menuiconButton {
+  min-height: 56px !important;
+  border-radius: 100px !important;
+  max-width: 40px;
+  float: left;
+}
