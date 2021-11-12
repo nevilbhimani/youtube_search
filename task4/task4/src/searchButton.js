@@ -6,7 +6,7 @@ import YoutubeAPI from "./YoutubeAPI";
 import { createContext } from "react";
 import { styled } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
-const dataToBeSearched = createContext();
+// const dataToBeSearched = createContext();
 export default function SearchButton({ search, setSearch, API, setAPI }) {
   const SearchIconWrapper = styled("div")(({ theme }) => ({
     padding: theme.spacing(0, 2),
@@ -57,4 +57,4 @@ export default function SearchButton({ search, setSearch, API, setAPI }) {
     </>
   );
 }
-export { dataToBeSearched };
+// export { dataToBeSearched };
