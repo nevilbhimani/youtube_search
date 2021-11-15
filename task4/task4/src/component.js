@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 function Component() {
   const context = useContext(fetchedData);
 
-  console.log(context.items);
+  console.log(context);
   return (
     <>
       <Grid container spacing={2}>

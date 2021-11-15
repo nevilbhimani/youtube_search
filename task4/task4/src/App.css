@@ -52,13 +52,18 @@
 }
 .searchBox {
   color: black;
-  margin-left: 100px;
+  margin-left: 175px;
   float: left;
   max-height: 50px;
 }
 .search_icon {
   height: 56px;
-  width: 50px;
+  width: 65px;
+  height: 40px;
+  margin-top: 8px;
+  background-color: #f8f8f8;
+  border-width: 0.25px;
+  border-color: #cccccc;
 }
 .iconButton {
   float: left;
@@ -127,4 +132,11 @@
   border-radius: 100px !important;
   max-width: 40px;
   float: left;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 500px;
+  border-radius: 0px !important;
+  height: 40px;
+  margin-top: 8px;
+  border-color: #cccccc;
 }
