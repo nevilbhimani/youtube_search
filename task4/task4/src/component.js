@@ -6,21 +6,21 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-
+import { fetchedItems } from "./Infinitescroll";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 function Component() {
-  const context = useContext(fetchedData);
+  const context = useContext(fetchedItems);
 
   console.log(context);
   return (
     <>
       <Grid container spacing={2}>
-        {context.items &&
-          context.items.map((prop) => {
+        {context &&
+          context.map((prop) => {
             return (
               <>
                 <Grid item lg={3} md={4} sm={6} xs={12}>
