@@ -37,14 +37,17 @@ function YoutubeAPI({
     // console.log(items);
     // if (items.length === 50) setOnce(false);
   };
+  console.log(search);
+  console.log(API);
   useEffect(() => {
     setAPI(
       `https://youtube.googleapis.com/youtube/v3/search?q=${search}&part=snippet&pageToken=${nextPageToken}&chart=mostPopular&regionCode=IN&maxResults=50&key=AIzaSyDzWn3REZH7cU0GX7XMv-H9IpE4ukrSj88`
     );
-    getData();
-    console.log(data);
   }, [search, API]);
-
+  useEffect(() => {
+    getData();
+  }, [search, API]);
+  console.log(data);
   // useEffect(() => {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);

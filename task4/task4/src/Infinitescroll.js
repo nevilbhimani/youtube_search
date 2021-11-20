@@ -43,20 +43,20 @@ const Infinitescroll = ({
   }
 
   const fetchMoreListItems = async () => {
-    console.log(tempAPI);
+    // console.log(tempAPI);
     const response = await fetch(tempAPI);
 
     setItems(await response.json());
-    console.log(items);
+    // console.log(items);
     setIsFetching(false);
   };
   useEffect(() => {
     if (!isFetching) return;
 
     setNextPageToken(data.nextPageToken);
-    console.log(tempItem.length);
+    // console.log(tempItem.length);
     if (tempItem.length > 50) {
-      console.log(items.nextPageToken);
+      // console.log(items.nextPageToken);
       setNextPageToken(items.nextPageToken);
     }
     console.log(nextPageToken);
@@ -70,26 +70,26 @@ const Infinitescroll = ({
     if (!isFetching) return;
     fetchMoreListItems();
   }, [tempAPI]);
-  console.log(data);
-  console.log();
-  console.log(data);
+  // console.log(data);
+  // console.log();
+  // console.log(data);
 
   useEffect(() => {
     if (items.length !== 0) {
       for (var i = 0; i < items.items.length; i++) {
         var arr = items.items.slice(i, i + 1);
-        console.log(arr);
+        // console.log(arr);
         // setTempItem(tempItem.push(arr));
         tempItem.push(...arr);
       }
     }
   }, [items]);
-  console.log(tempItem);
+  // console.log(tempItem);
 
   //   useEffect(() => {
 
   //   }, [data]);
-  console.log(items);
+  // console.log(items);
   return (
     <>
       {" "}
