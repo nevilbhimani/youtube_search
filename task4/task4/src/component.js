@@ -18,7 +18,7 @@ function Component() {
   console.log(context);
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid className="gridLayout" container spacing={2}>
         {context &&
           context.map((prop) => {
             return (

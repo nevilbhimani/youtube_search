@@ -13,14 +13,10 @@ const Custom_topNavBar = ({ search, setSearch, API, setAPI }) => {
   console.log(API);
   return (
     <>
-      <Button className="menuiconButton">
+      {/* <Button className="menuiconButton">
         <MenuIcon className="iconButton" style={{ color: "black" }} />
-      </Button>
-      <Button className="yticon">
-        {/* <YouTubeIcon fontSize="large" style={{ color: "red" }} />
-        YouTube */}
-        <img src={Youtubenew_generated} className="yticon"></img>
-      </Button>
+      </Button> */}
+
       <SearchButton
         API={API}
         setAPI={setAPI}
@@ -30,15 +26,17 @@ const Custom_topNavBar = ({ search, setSearch, API, setAPI }) => {
       <Button className="micbttn">
         <MicIcon />
       </Button>
-      <Button className="bellbttn">
-        <NotificationsIcon className="bell" />
-      </Button>
-      <Button className="appbttn">
-        <AppsIcon className="app" />
-      </Button>
-      <Button className="createbtn">
-        <VideoCallIcon className="create" />
-      </Button>
+      <div className="threeIcons">
+        <Button className="bellbttn">
+          <NotificationsIcon className="bell" />
+        </Button>
+        <Button className="appbttn">
+          <AppsIcon className="app" />
+        </Button>
+        <Button className="createbtn">
+          <VideoCallIcon className="create" />
+        </Button>
+      </div>
     </>
   );
 };

@@ -74,6 +74,7 @@
 .top_navbar {
   height: 56px;
   padding: 0 16px;
+  color: white !important;
 }
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
   height: 20px;
@@ -86,7 +87,7 @@
 .yticon {
   height: 56px;
   width: 90px;
-  float: left;
+  float: right;
 }
 /* .icon_button {
   padding-top: 40px !important;
@@ -120,12 +121,14 @@
   border-radius: 100px !important;
   max-width: 40px;
   float: right;
+  position: relative;
 }
 .createbtn {
   min-height: 56px !important;
   border-radius: 100px !important;
   max-width: 40px;
-  float: right;
+  float: right !important;
+  position: inherit !important;
 }
 .menuiconButton {
   min-height: 56px !important;
@@ -139,4 +142,25 @@
   height: 40px;
   margin-top: 8px;
   border-color: #cccccc;
+}
+.menuicon {
+  float: left !important;
+  margin-top: 8px !important;
+}
+.threeIcons {
+  float: right !important;
+  margin-left: 65px;
+}
+.css-1t29gy6-MuiToolbar-root {
+  background-color: white;
+}
+.twoIcons {
+  margin-right: 90px !important;
+}
+body {
+  background-color: #f9f9f9 !important;
+}
+.gridLayout {
+  display: flex !important;
+  padding-left: 250px;
 }

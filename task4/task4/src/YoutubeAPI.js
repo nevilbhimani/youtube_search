@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 import SearchButton from "./searchButton";
 import PrimarySearchAppBar from "./topNavBar.js";
 // import { dataToBeSearched } from "./searchButton";
+import MiniDrawer from "./sidebar";
 import Custom_topNavBar from "./custom_topNavBar";
 const fetchedData = createContext();
 
@@ -89,14 +90,20 @@ function YoutubeAPI({
 
   return (
     <>
-      <div>
+      {/* <div>
         <Custom_topNavBar
           API={API}
           setAPI={setAPI}
           search={search}
           setSearch={setSearch}
         />
-      </div>
+      </div> */}
+      <MiniDrawer
+        API={API}
+        setAPI={setAPI}
+        search={search}
+        setSearch={setSearch}
+      />
       {/* <Divider className="divider" /> */}
       <fetchedData.Provider value={data}>
         <Component />

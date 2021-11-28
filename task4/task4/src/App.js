@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import YoutubeAPI from "./YoutubeAPI";
 import Infinitescroll from "./Infinitescroll";
 function App() {
-  const [search, setSearch] = useState("undefined");
+  const [search, setSearch] = useState("");
   const [nextPageToken, setNextPageToken] = useState("");
   const [items, setItems] = useState([]);
   const [API, setAPI] = useState(
